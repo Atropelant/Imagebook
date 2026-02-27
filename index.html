@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+            margin:auto;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction:column;
+
+            & #senha{
+                margin-left: auto;
+                margin-right: auto;
+            } 
+
+            & button{
+                margin-top: 1vh;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="verificarSenha()">Entrar</button>
+
+    <script>
+        function verificarSenha() {
+            const senhaCorreta = "241024"; // senha pré-definida
+            const senhaDigitada = document.getElementById("senha").value;
+
+            if (senhaDigitada === senhaCorreta) {
+                window.location.href = "index.html";
+            } else {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</body>
+</html>
