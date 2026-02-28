@@ -32,19 +32,20 @@
     <button onclick="verificarSenha()">Entrar</button>
 
     <script>
-        function verificarSenha() {
-            const senhaCorreta = "241024"; // senha pré-definida
-            const senhaDigitada = document.getElementById("senha").value;
-
-            if (senhaDigitada === senhaCorreta) {
-                window.location.href = "index1.html";
-            } else {
-                alert("Senha incorreta!");
-            }
+      function verificarSenha() {
+        const senhaCorreta = "241024";
+        const senhaDigitada = document.getElementById("senha").value;
+    
+        if (senhaDigitada === senhaCorreta) {
+          window.location.href = "index1.html";
+        } else {
+          alert("Senha incorreta!");
         }
-    </script>
+      }
+</script>
 </body>
 
 </html>
+
 
 
